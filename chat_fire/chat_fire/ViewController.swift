@@ -53,6 +53,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         }
         Auth.auth().signIn(withEmail: emailAddress, password: password) { (result, error) in
             if (error == nil){
+                self.dismiss(animated: true, completion: nil)
                 print(result?.user.uid)
             }else{
                 self.displayError(errorText: "Wrong Email or password")
@@ -70,6 +71,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
                 guard let userId = result?.user.uid,let userName = cell.userNameTextField.text else{
                     return
                 }
+                self.dismiss(animated: true, completion: nil)
                 let reference = Database.database().reference()
                 let user = reference.child("users").child(userId)
                 let dataArray:[String:Any] = ["username":userName]
