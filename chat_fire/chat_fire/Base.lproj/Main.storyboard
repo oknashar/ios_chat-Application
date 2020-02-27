@@ -198,7 +198,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
@@ -210,8 +210,12 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="bIl-lo-LHD"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Create Romm"/>
+                                        <state key="normal" title="Create Room"/>
+                                        <connections>
+                                            <action selector="didPressCreateNewRoom:" destination="4Eu-ca-AU9" eventType="touchUpInside" id="xSY-gl-5nI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -254,6 +258,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="nameRomeTextField" destination="0xG-6A-L1E" id="zwW-ZQ-au6"/>
                         <outlet property="roomsTable" destination="6cB-TE-lg2" id="3Xw-TK-lIJ"/>
                     </connections>
                 </viewController>

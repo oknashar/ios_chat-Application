@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17BF4E6EEE6479E8FDEB3A41 /* Pods_chat_fire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AFC3A5FA980D3EF8F3EF00 /* Pods_chat_fire.framework */; };
 		DC3C3A5124082CDD0063F02B /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3C3A5024082CDD0063F02B /* RoomsViewController.swift */; };
+		DC3C3A582408605F0063F02B /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3C3A572408605F0063F02B /* Room.swift */; };
 		DC6382632406BF6E00D4AEE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6382622406BF6E00D4AEE2 /* AppDelegate.swift */; };
 		DC6382652406BF6E00D4AEE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6382642406BF6E00D4AEE2 /* ViewController.swift */; };
 		DC6382682406BF6E00D4AEE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6382662406BF6E00D4AEE2 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		2816AFC55F69987F57339C4A /* Pods-chat_fire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat_fire.debug.xcconfig"; path = "Target Support Files/Pods-chat_fire/Pods-chat_fire.debug.xcconfig"; sourceTree = "<group>"; };
 		7BEBB7A814E17B8F58E0275E /* Pods-chat_fire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat_fire.release.xcconfig"; path = "Target Support Files/Pods-chat_fire/Pods-chat_fire.release.xcconfig"; sourceTree = "<group>"; };
 		DC3C3A5024082CDD0063F02B /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		DC3C3A572408605F0063F02B /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		DC63825F2406BF6E00D4AEE2 /* chat_fire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chat_fire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6382622406BF6E00D4AEE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC6382642406BF6E00D4AEE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC3C3A52240860210063F02B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC3C3A572408605F0063F02B /* Room.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DC6382562406BF6D00D4AEE2 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		DC6382612406BF6E00D4AEE2 /* chat_fire */ = {
 			isa = PBXGroup;
 			children = (
+				DC3C3A52240860210063F02B /* Model */,
 				DC6382742406C32000D4AEE2 /* Resources */,
 				DC6382622406BF6E00D4AEE2 /* AppDelegate.swift */,
 				DC6382642406BF6E00D4AEE2 /* ViewController.swift */,
@@ -229,6 +240,7 @@
 				DC63827A2406D5C000D4AEE2 /* FormCell.swift in Sources */,
 				DC6382632406BF6E00D4AEE2 /* AppDelegate.swift in Sources */,
 				DC3C3A5124082CDD0063F02B /* RoomsViewController.swift in Sources */,
+				DC3C3A582408605F0063F02B /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
